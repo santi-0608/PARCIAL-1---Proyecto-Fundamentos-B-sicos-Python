@@ -1,8 +1,7 @@
-"""
+
 Módulo de lógica (API).
 Lee el archivo Excel, filtra la información y calcula las medianas.
-Versión sin comprobación de archivo.
-"""
+
 
 from openpyxl import load_workbook
 import statistics
@@ -65,3 +64,4 @@ def consultar_datos(departamento, municipio, cultivo, n_registros):
     except Exception as e:
         print("Error al consultar los datos:", e)
         return []
+
